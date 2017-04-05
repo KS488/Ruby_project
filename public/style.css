@@ -1,0 +1,83 @@
+body {
+  background-color: #edeff0;
+  font-family: "Helvetica", Arial, sans-serif;
+  padding: 30px;
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+}
+
+h2 {
+  font: 200 80px/0.1 'Oleo Script', Helvetica, sans-serif;
+  color: #2b2b2b;
+  text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+}
+p{
+font-size: 15px;
+}
+
+ul{
+list-style: none;
+}
+a, input[type="submit"] {
+  display: inline-block;
+  background-color: #009ACD;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 100px;
+  letter-spacing: 0.05em;
+  border: none;
+}
+
+div + a,
+div a {
+  background-color: #aaa;
+}
+
+div a { margin-right: 10px; }
+div a + form { display: inline-block; }
+
+p + div {
+  margin-top: 50px;
+  text-align: center;
+  background-color: transparent;
+  border-bottom: none;
+}
+
+div {
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 5px;
+  border-bottom: solid 2px #ddd;
+  margin-bottom: 30px;
+}
+
+fieldset {
+  border: none;
+}
+fieldset input,
+fieldset textarea { width: 100%; }
+
+label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px 0;
+  text-indent: 10px;
+  border: solid 2px #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}

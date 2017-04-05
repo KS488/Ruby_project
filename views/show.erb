@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h2> <%= @title %> </h2>
+    <h2> Your order is on its Way </h2>
+    <img src="https://render.bitstrips.com/v2/cpanel/10216108-260358917_6-s1-v1.png?transparent=1&palette=1">
+    <p> <b>Your Order :</b> <%= @content %> </p>
+
+    <div>
+      <a href="/<%= @title %>/edit">Edit Your Order </a>
+      <a href="/new">  Place another Order </a>
+      <form method="post">
+        <input type ="hidden" name="_method" value="delete">
+        <input type="submit" value="Cancel Your Order">
+      </form>
+    </div>
+  </body>
+</html>

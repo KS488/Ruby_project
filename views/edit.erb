@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+
+    <h2> Edit your order <%= @title %></h2>
+
+    <div>
+      <form method ="post" action = "/<%= @title %>">
+        <input type="hidden" name ="_method" value ="put">
+        <label for="Date">Date:</label>
+        <input type="Date" name="date" id="date">
+
+        <label for="starter">Starter:</label>
+        <select name ="starter" id="starter">
+          <option>None</option>
+          <option>barley soupⓋ</option>
+          <option>Carrot,Coriander and Chicken Soup</option>
+          <option>Lentil SoupⓋ</option>
+          <option>Vietnamese Spring Rolls⭐️ </option>
+          <option>Satay Skewer</option>
+        </select>
+
+        <label for="Main">Main:</label>
+        <select name ="main" id="Main">
+          <option>None</option>
+          <option>Salmon Ragout</option>
+          <option>Thai Green Chicken Curry</option>
+          <option>Red Beef Curry</option>
+          <option> Grilled Honey Mustard Chicken</option>
+          <option>Khalids Teriyaki Sesame Chicken Special ⭐️ </option>
+          <option>Veggie Chili BowlⓋ</option>
+          <option>VegeliciousⓋ</option>
+
+        </select>
+
+        <label for="Dessert">Dessert:</label>
+        <select name ="dessert" id="Dessert">
+          <option>None</option>
+          <option>Frosty Cake</option>
+          <option>Dark Chocolate Mousse</option>
+          <option>Fruit Salad</option>
+          <option>Chocolate Banana Square⭐️ </option>
+          <option>Choconut Treats</option>
+        </select>
+
+        <label for="Drink">Shakes&Beverages:</label>
+        <select name ="drink" id="Drink">
+          <option>None</option>
+          <option>Choco Peanut Milkshake⭐️</option>
+          <option>Healthy Berry Smoothie</option>
+          <option>Mocha Delight</option>
+          <option>apple Juice</option>
+          <option>Watermelon Juice</option>
+          <option>Orange Juice</option>
+          <option>Flavoured water - Orange passion</option>
+          <option>Flavoured water - Lemon lime</option>
+          <option>Bottled Water</option>
+        </select>
+
+        <fieldset>
+          <label for="comment">Comments:</label>
+          <textarea rows="10" columns="50"name="comment" id="comment"></textarea>
+        </fieldset>
+        <input type = "submit">
+      </form>
+    </div>
+
+
+    <a href = "/" >home page</a>
+  </body>
+</html>
